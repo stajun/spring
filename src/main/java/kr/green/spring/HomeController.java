@@ -22,13 +22,10 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
 	@RequestMapping(value= {"/main/home","/home.do"})
 	public ModelAndView openTilesView(ModelAndView mv) throws Exception{
 		mv.setViewName("/main/home");//타일즈 view => 일반 view
-		mv.addObject("setHeader", "타일즈");
+		mv.addObject("setHeader", "타일즈테스트");
 		return mv;
 	}
 }
